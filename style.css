@@ -1,0 +1,28 @@
+h4 {
+    font-weight:bold;
+}
+
+h5 {
+	font-weight:bold;
+}
+
+h2 {
+    font-weight:bold;
+}
+
+.footer {
+    padding-top: 22px;
+    text-align:center;
+}
+
+.container h4 {
+    padding-top: 10px;
+}
+
+.publications p {
+    padding-bottom: 10px;
+}
+
+.header {
+    padding-bottom: 10px;
+}
