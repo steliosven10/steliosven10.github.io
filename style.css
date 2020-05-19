@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 h4 {
     font-weight:bold;
 }
@@ -9,6 +13,32 @@ h5 {
 h2 {
     font-weight:bold;
 }
+
+h3 {
+    font-weight:bold;
+}
+
+body {
+	font-size: 14px;
+	padding-top: 50px;
+}
+
+a.anchor{
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}
+
+.nav-pills > li.dropdown > a:hover,
+.nav-pills > li.dropdown > a:focus
+{
+  background-color: #E9E7BA;
+}
+
+.list-inline{display:block; margin-left:15px; }
+.list-inline li{display:inline-block; padding-left:0; padding-right:0; }
+.list-inline li:not(:last-child):after{content:'\25AA'; color:#668800; margin-left:15px; margin-right:10px; }
 
 .footer {
     padding-top: 22px;
