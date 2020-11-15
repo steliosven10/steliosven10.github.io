@@ -200,6 +200,46 @@
 					</style>
 					<table class="tg">
 						<tr>
+							<td class="tg-031e" valign="top"><a href="hapi.png" target="_blank"><img src="hapi.png" alt="Hardware-aware progressive inference with HAPI." width="380px"></a>
+							</td>
+							<td class="tg-031e">
+								<strong>HAPI: Hardware-aware design of multi-exit CNNs</strong>
+								<p>
+								Multi-exit CNNs, or progressive inference networks, are becoming an emerging approach for delivering inference with an adaptive accuracy-complexity trade-off. Nevertheless, existing studies on early exiting have primarily focused on the training scheme, without considering the use-case requirements or the deployment platform. This work presents HAPI, a hardware-aware methodology for generating optimised high-performance multi-exit networks. At its core lies a synchronous dataflow modelling framework that, in contrast to conventional modelling for *static* CNNs, is capable of capturing the *dynamic* conditional execution of multi-exit CNNs. By explicitly considering the target hardware, HAPI efficiently traverses the design space and yields a multi-exit network, tailored to the application's multi-objective needs. Quantitative evaluation shows that our system consistently outperforms alternative search mechanisms and state-of-the-art early-exit schemes across various latency budgets. Moreover, it pushes further the performance of highly optimised hand-crafted early-exit CNNs, delivering up to 5.11× speedup over lightweight models on imposed latency-driven SLAs for embedded  devices. Overall, this work shows how multi-exit CNNs together with hardware-aware customisation can be key enablers for meeting the performance goals of AI applications across diverse platforms.</p>
+								<p>
+									Stefanos Laskaridis, <strong>Stylianos I. Venieris</strong>, Hyeji Kim and Nicholas D. Lane<br/>
+									<em><a href="papers/[2020]_iccad_hapi_hardware_aware_progressive_inference.pdf">HAPI: Hardware-Aware Progressive Inference</a></em>,
+									<strong>IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2020.</strong> [<a href="papers/hapi2020iccad.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2008.03997">preprint</a>]		
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="tg-031e" valign="top"><a href="spinn.png" target="_blank"><img src="spinn.png" alt="Distributed inference with SPINN." width="380px"></a>
+							</td>
+							<td class="tg-031e">
+								<strong>SPINN: Robust distributed inference through multi-exit progressive models and device-server synergy</strong>
+								<p>Despite the soaring use of convolutional neural networks (CNNs) in mobile applications, uniformly sustaining high-performance inference on mobile has been elusive due to the excessive computational demands of modern CNNs and the increasing diversity of deployed devices. A popular alternative comprises offloading CNN processing to powerful cloud-based servers. Nevertheless, by relying on the cloud to produce outputs, emerging mission-critical and high-mobility applications, such as drone obstacle avoidance or interactive applications, can suffer from the dynamic connectivity conditions and the uncertain availability of the cloud. In this paper, we propose SPINN, a distributed inference system that employs synergistic device-cloud computation together with a progressive inference method to deliver fast and robust CNN inference across diverse settings. The proposed system introduces a novel scheduler that co-optimises the early-exit policy and the CNN splitting at run time, in order to adapt to dynamic conditions and meet user-defined service-level requirements. Quantitative evaluation illustrates that SPINN outperforms its state-of-the-art collaborative inference counterparts by up to 2× in achieved throughput under varying network conditions, reduces the server cost by up to 6.8× and improves accuracy by 20.7% under latency constraints, while providing robust operation under uncertain connectivity conditions and significant energy savings compared to cloud-centric execution.</p>
+								<p>
+									Stefanos Laskaridis, <strong>Stylianos I. Venieris</strong>, Mario Almeida, Ilias Leontiadis and Nicholas D. Lane<br/>
+									<em><a href="papers/[2020]_mobicom_spinn_synergistic_progressive_inference_of_neural_networks_over_device_and_cloud.pdf">SPINN: Synergistic Progressive Inference of Neural Networks over Device and Cloud</a></em>,
+									<strong>26th Annual International Conference on Mobile Computing and Networking (MobiCom), 2020.</strong> [<a href="papers/spinn2020mobicom.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2008.06402">preprint</a>]
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="tg-031e" valign="top"><a href="mobisr.png" target="_blank"><img src="mobisr.png" alt="MobiSR system architecture." width="380px"></a>
+							</td>
+							<td class="tg-031e">
+								<strong>MobiSR: Delivering high-performance on-device super-resolution through heterogeneous mobile processors</strong>
+								<p>In recent years, convolutional networks have demonstrated unprecedented performance in the image restoration task of super-resolution (SR). SR entails the upscaling of a single low-resolution image in order to meet application-specific image quality demands and plays a key role in mobile devices. To comply with privacy regulations and reduce the overhead of cloud computing, executing SR models locally on-device constitutes a key alternative approach. Nevertheless, the excessive compute and memory requirements of SR workloads pose a challenge in mapping SR networks on resource-constrained mobile platforms. This work presents MobiSR, a novel framework for performing efficient superresolution on-device. Given a target mobile platform, the proposed framework considers popular model compression techniques and traverses the design space to reach the highest performing trade-off between image quality and processing speed. At run time, a novel scheduler dispatches incoming image patches to the appropriate model-engine pair based on the patch’s estimated upscaling difficulty in order to meet the required image quality with minimum processing latency. Quantitative evaluation shows that the proposed framework yields on-device SR designs that achieve an average speedup of 2.13× over highly-optimized parallel difficulty-unaware mappings and 4.79× over highly-optimized single compute engine implementations.</p>
+								<p>
+									Royson Lee, <strong>Stylianos I. Venieris</strong>, Lukasz Dudziak, Sourav Bhattacharya and Nicholas D. Lane<br/>
+									<em><a href="papers/[2019]_mobicom_mobisr_efficient_on_device_super_resolution_through_heterogeneous_mobile_processors.pdf">MobiSr: Efficient On-Device Super-resolution through Heterogeneous Mobile Processors</a></em>,
+									<strong>25th Annual International Conference on Mobile Computing and Networking (MobiCom), 2019.</strong> [<a href="papers/lee2019mobicom.bibtex">bibtex</a> | <a href="https://dl.acm.org/citation.cfm?id=3345455">link</a>]
+								</p>
+							</td>
+						</tr>
+						<tr>
 							<td class="tg-031e" valign="top"><a href="fcnnx_arch.png" target="_blank"><img src="fcnnx_arch.png" alt="CNN-to-FPGA Toolflows Chart" width="380px"></a></td>
 							<td class="tg-031e">
 								<strong>f-CNN<sup>x</sup>: Enabling emerging multi-CNN applications</strong>
