@@ -73,14 +73,16 @@
 			<div class="row content">
 				<div class="col-lg-offset-2 col-md-8">
 					<p style="text-align:justify;font-size:14px">
-						I am currently a Researcher at <a href="https://research.samsung.com/aicenter_cambridge">Samsung AI</a>. Before, I was a Research Assistant in the <a href="https://www.imperial.ac.uk/intelligent-digital-systems/">Intelligent Digital Systems Lab</a> which is part of the <a href="http://www.imperial.ac.uk/electrical-engineering">Department of Electrical and Electronic Engineering</a> at <a href="http://www.imperial.ac.uk/">Imperial College London</a>. I received my PhD from Imperial College London under the supervision of <a href="http://cas.ee.ic.ac.uk/people/ccb98">Dr. Christos Bouganis</a>.
+						I am currently a Researcher at <a href="https://research.samsung.com/aicenter_cambridge">Samsung AI</a>, where I work within the Embedded AI group on on-device and distributed forms of machine learning. Before, I was a Research Assistant in the <a href="https://www.imperial.ac.uk/intelligent-digital-systems/">Intelligent Digital Systems Lab</a> which is part of the <a href="http://www.imperial.ac.uk/electrical-engineering">Department of Electrical and Electronic Engineering</a> at <a href="http://www.imperial.ac.uk/">Imperial College London</a>. I received my PhD from Imperial College London under the supervision of <a href="http://cas.ee.ic.ac.uk/people/ccb98">Dr. Christos Bouganis</a>.
 					</p>
 					<!--h4>Research Interests</h4-->
 					<p style="text-align:justify;font-size:14px">
-						My research interests include methodologies for the principled and automated mapping 
-						of deep learning algorithms on mobile and embedded computing platforms, as well as the design of custom hardware accelerators 
-						for the high-performance, energy-efficent deployment of deep neural networks. During my PhD, I focused on the design of architectures and methodologies for mapping deep learning algorithms to high-performance, energy-efficient reconfigurable FPGA-based systems 
-						and making FPGAs more accessible to AI practitioners.
+						My research interests include the development of principled and automated methodologies for the mapping of deep learning algorithms on mobile and embedded platforms, in addition to the design of custom hardware accelerators and approximate computing techniques for the high-performance, energy-efficent deployment of deep neural networks (DNNs). 
+					</p>
+					<p style="text-align:justify;font-size:14px">
+						During my PhD, I focused on the design of custom hardware accelerators that deliver high-performance, energy-efficient inference for various types of DNNs (<i>e.g.</i> CNNs, LSTMs), while making FPGAs more accessible to AI practitioners through design automation. In this endeavour, I developed a synchronous dataflow model for analytically capturing DNN workloads, and designed hardware architectures and methodologies for the automated mapping of deep learning algorithms to high-performance, energy-efficient reconfigurable FPGA-based systems.
+						
+						<!--My research interests include methodologies for the principled and automated mapping of deep learning algorithms on mobile and embedded computing platforms, as well as the design of custom hardware accelerators for the high-performance, energy-efficent deployment of deep neural networks. During my PhD, I focused on the design of architectures and methodologies for mapping deep learning algorithms to high-performance, energy-efficient reconfigurable FPGA-based systems and making FPGAs more accessible to AI practitioners. -->
 						
 						<!--My research interests include the development of methodologies for the mapping 
 						of deep learning algorithms on mobile and embedded computing platforms, as well as the design of custom hardware accelerators 
@@ -208,7 +210,7 @@
 							<td class="tg-031e" valign="top"><a href="hapi.png" target="_blank"><img src="hapi.png" alt="Hardware-aware progressive inference with HAPI." width="380px"></a>
 							</td>
 							<td class="tg-031e">
-								<strong>HAPI: Hardware-aware design of multi-exit CNNs</strong>
+								<strong>HAPI: Hardware-aware design of multi-exit progressive CNNs</strong>
 								<p>
 								Multi-exit CNNs, or progressive inference networks, are becoming an emerging approach for delivering inference with an adaptive accuracy-complexity trade-off. Nevertheless, existing studies on early exiting have primarily focused on the training scheme, without considering the use-case requirements or the deployment platform. This work presents HAPI, a hardware-aware methodology for generating optimised high-performance multi-exit networks. At its core lies a synchronous dataflow modelling framework that, in contrast to conventional modelling for *static* CNNs, is capable of capturing the *dynamic* conditional execution of multi-exit CNNs. By explicitly considering the target hardware, HAPI efficiently traverses the design space and yields a multi-exit network, tailored to the application's multi-objective needs. Quantitative evaluation shows that our system consistently outperforms alternative search mechanisms and state-of-the-art early-exit schemes across various latency budgets. Moreover, it pushes further the performance of highly optimised hand-crafted early-exit CNNs, delivering up to 5.11× speedup over lightweight models on imposed latency-driven SLAs for embedded  devices. Overall, this work shows how multi-exit CNNs together with hardware-aware customisation can be key enablers for meeting the performance goals of AI applications across diverse platforms.</p>
 								<p>
@@ -368,7 +370,7 @@
 					<p>
 						Alexandros Kouris, <strong>Stylianos I. Venieris</strong>, Michalis Rizakis and Christos-Savvas Bouganis<br/>
 						<em><a href="papers/[2020]_cemag_approx_lstms_for_time_constrained_inference_enabling_fast_reaction_in_self_driving_cars.pdf">Approximate LSTMs for Time-Constrained Inference: Enabling Fast Reaction in Self-Driving Cars</a></em>,
-						<strong>IEEE Consumer Electronics Magazine, 2020.</strong> [<a href="papers/kouris2020cemag.bibtex" target="_blank">bibtex</a> | <a href="https://ieeexplore.ieee.org/document/9109418">link</a> | <a href="https://arxiv.org/abs/1905.00689">preprint</a>]
+						<strong>IEEE Consumer Electronics Magazine, 2020.</strong> [<a href="papers/kouris2020cemag.bibtex" target="_blank">bibtex</a> | <a href="https://arxiv.org/abs/1905.00689">preprint</a> | <a href="https://ieeexplore.ieee.org/document/9109418">link</a>]
 					</p>
 					<p>
 						<strong>Stylianos I. Venieris</strong> and Christos-Savvas Bouganis<br/>
@@ -385,32 +387,32 @@
 					<p>
 						Royson Lee, <strong>Stylianos I. Venieris</strong> and Nicholas D. Lane<br/>
 						<em><a href="papers/[2020]_distributedml_neural_enhancement_in_content_delivery_systems_state_of_the_art_and_future_directions.pdf">Neural Enhancement in Content Delivery Systems: The State-of-the-Art and Future Directions</a></em>,
-						<strong>1st Workshop on Distributed Machine Learning (DistributedML), CoNEXT, 2020.</strong> [<a href="papers/neuralcds2020distributedml.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2010.05838">preprint</a>] <!--| <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]-->
+						<strong>1st Workshop on Distributed Machine Learning (DistributedML), CoNEXT, 2020.</strong> [<a href="papers/neuralcds2020distributedml.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2010.05838">preprint</a> | <a href="https://dl.acm.org/doi/10.1145/3426745.3431336">link</a>] <!--| <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]-->
 					</p>
 					<p>
 						Stefanos Laskaridis, <strong>Stylianos I. Venieris</strong>, Hyeji Kim and Nicholas D. Lane<br/>
 						<em><a href="papers/[2020]_iccad_hapi_hardware_aware_progressive_inference.pdf">HAPI: Hardware-Aware Progressive Inference</a></em>,
-						<strong>IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2020.</strong> [<a href="papers/hapi2020iccad.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2008.03997">preprint</a>] <!--| <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]-->
+						<strong>IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2020.</strong> [<a href="papers/hapi2020iccad.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2008.03997">preprint</a> | <a href="https://ieeexplore.ieee.org/document/9256461/">link</a>] <!--| <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]-->
 					</p>
 					<p>
 						Stefanos Laskaridis, <strong>Stylianos I. Venieris</strong>, Mario Almeida, Ilias Leontiadis and Nicholas D. Lane<br/>
 						<em><a href="papers/[2020]_mobicom_spinn_synergistic_progressive_inference_of_neural_networks_over_device_and_cloud.pdf">SPINN: Synergistic Progressive Inference of Neural Networks over Device and Cloud</a></em>,
-						<strong>26th Annual International Conference on Mobile Computing and Networking (MobiCom), 2020.</strong> [<a href="papers/spinn2020mobicom.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2008.06402">preprint</a>] <!--| <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]-->
+						<strong>26th Annual International Conference on Mobile Computing and Networking (MobiCom), 2020.</strong> [<a href="papers/spinn2020mobicom.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2008.06402">preprint</a> | <a href="https://dl.acm.org/doi/10.1145/3372224.3419194">link</a>] <!--| <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]-->
 					</p>
 					<p>
 						Royson Lee, Lukasz Dudziak, Mohamed S. Abdelfattah, <strong>Stylianos I. Venieris</strong>, Hyeji Kim, Hongkai Wen and Nicholas D. Lane<br/>
 						<em><a href="papers/[2020]_eccv_journey_towards_tiny_perceptual_super_resolution.pdf">Journey Towards Tiny Perceptual Super-Resolution</a></em>,
-						<strong>16th European Conference on Computer Vision (ECCV), 2020.</strong> [<a href="papers/tinysr2020eccv.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2007.04356">preprint</a>] <!--| <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]-->
+						<strong>16th European Conference on Computer Vision (ECCV), 2020.</strong> [<a href="papers/tinysr2020eccv.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2007.04356">preprint</a> | <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/5305_ECCV_2020_paper.php">link</a>] <!--| <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]-->
 					</p>
 					<p>
 						Aditya Rajagopal, Diederik A. Vink, <strong>Stylianos I. Venieris</strong> and Christos-Savvas Bouganis<br/>
 						<em><a href="papers/[2020]_icml_muppet_a_precision_switching_strategy_for_quantised_fixed_point_training_of_cnns.pdf"-->Multi-Precision Policy Enforced Training (MuPPET): A precision-switching strategy for quantised fixed-point training of CNNs</a></em>,
-						<strong>37th International Conference on Machine Learning (ICML), 2020.</strong> [<!--a href="papers/kouris2020date.bibtex">bibtex</a--><a href="https://arxiv.org/abs/2006.09049">preprint</a> | <a href="https://github.com/ICIdsl/pytorch_training.git">open-source repo</a>]
+						<strong>37th International Conference on Machine Learning (ICML), 2020.</strong> [<!--a href="papers/kouris2020date.bibtex">bibtex</a--><a href="https://arxiv.org/abs/2006.09049">preprint</a> | <a href="https://proceedings.icml.cc/paper/2020/hash/dfb84a11f431c62436cfb760e30a34fe-Abstract.html">link</a> | <a href="https://github.com/ICIdsl/muppet">open-source repo</a>]
 					</p>
 					<p>
 						Diederik A. Vink, Aditya Rajagopal, <strong>Stylianos I. Venieris</strong> and Christos-Savvas Bouganis<br/>
 						<em><a href="papers/[2020]_fpl_caffe_barista_brewing_caffe_with_fpgas_in_the_training_loop.pdf"-->Caffe Barista: Brewing Caffe with FPGAs in the Training Loop</a></em>,
-						<strong>30th International Conference on Field-Programmable Logic and Applications (FPL), 2020.</strong> [<!--a href="papers/kouris2020date.bibtex">bibtex</a--><a href="https://arxiv.org/abs/2006.13829">preprint</a> | <a href="https://github.com/ICIdsl/caffe_fpga.git">open-source repo</a>]
+						<strong>30th International Conference on Field-Programmable Logic and Applications (FPL), 2020.</strong> [<!--a href="papers/kouris2020date.bibtex">bibtex</a--><a href="https://arxiv.org/abs/2006.13829">preprint</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9221618">link</a> | <a href="https://github.com/ICIdsl/caffe_fpga.git">open-source repo</a>]
 					</p>
 					<p>
 						Alexandros Kouris, <strong>Stylianos I. Venieris</strong> and Christos-Savvas Bouganis<br/>
