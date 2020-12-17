@@ -19,9 +19,22 @@ h3 {
 }
 
 body {
-	font-size: 14px;
+	font-size: 15px;
 	padding-top: 50px;
+	color: #222;
+	background: #fff;
 }
+
+body.dark-theme {
+	color: #808080;
+	background: #222222;
+	font-weight: 500;
+}
+
+body.dark-theme a {
+  color: #809fff;
+}
+
 
 a.anchor{
     display: block;
@@ -47,6 +60,10 @@ a.anchor{
 
 .container h4 {
     padding-top: 10px;
+}
+
+.row_content div {
+	background: #222222;
 }
 
 .publications p {
