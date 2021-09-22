@@ -202,6 +202,34 @@
 					</style>
 					<table class="tg" style="font-size:14px">
 						<tr>
+							<td class="tg-031e" valign="top"><a href="unzipfpga_arch.png" target="_blank"><img src="unzipfpga_arch.png" alt="Enhanced CNN engines with unzipFPGA." width="380px"></a>
+							</td>
+							<td class="tg-031e">
+								<strong>unzipFPGA: Mitigating Memory Wall Effects in CNN Engines with On-the-Fly Weights Generation</strong>
+								<p>
+								One of the most widely adopted paradigms that lies in the midpoint of the flexibility-customisation spectrum is the single computation engine (SCE). Under this paradigm, a powerful processing engine is time-shared to sequentially execute the layers of a CNN. This allows for accelerator’s resources to be reused across both layers and CNN models, without the need to reconfigure the fabric. Nonetheless, their attainable performance is often bounded by two primary factors: 1) layers with low computation-to-communication ratio that become memory-bound and 2) the suboptimal mapping of diverse layers on the fixed configuration of the SCE that leads to underutilised processing elements (PEs). In this work, we investigate the implications in terms of CNN engine design for a class of models that introduce a pre-convolution stage to decompress the weights at run time. We refer to these approaches as <i>on-the-fly</i>. To minimise the negative impact of limited bandwidth on memory-bound layers, we present a novel hardware component that enables the on-chip on-the-fly generation of weights. We further introduce an input selective PE design that balances the load between PEs on suboptimally mapped layers. Finally, we present unzipFPGA, a framework to train on-the-fly models and traverse the design space to select the highest performing CNN engine configuration. Quantitative evaluation shows that unzipFPGA yields an average of 2.57× performance efficiency gain over highly optimised GPU designs under the same power constraints and up to 3.94× higher performance density over the state-of-the-art FPGA-based CNN accelerators.</p>
+								<p>
+									<strong>Stylianos I. Venieris</strong>, Javier Fernandez-Marques and Nicholas D. Lane<br/>
+									<em><a href="papers/[2021]_fccm_unzipfpga_enhancing_fpga_based_cnn_engines_with_on_the_fly_weights_generation.pdf">unzipFPGA: Enhancing FPGA-based CNN Engines with On-the-Fly Weights Generation</a></em>,
+									<strong>29th IEEE International Symposium on Field-Programmable Custom Computing Machines (FCCM), 2021.</strong> [<a href="papers/unzipfpga2021fccm.bibtex">bibtex</a> | <a href="https://arxiv.org/abs/2103.05600">preprint</a> | <a href="https://ieeexplore.ieee.org/document/9444081">link</a>]
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="tg-031e" valign="top"><a href="neural_enhancement_systems.png" target="_blank"><img src="neural_enhancement_systems.png" alt="DNN-based visual content delivery systems." width="380px"></a>
+							</td>
+							<td class="tg-031e">
+								<strong>Neural Enhancement for Visual Content Streaming Systems: A Survey and the Road Ahead</strong>
+								<p>
+								Internet-enabled smartphones and ultra-wide displays are transforming a variety of visual apps spanning from on-demand movies and 360° videos to video-conferencing and live streaming. However, robustly delivering visual content under fluctuating networking conditions on devices of diverse capabilities remains an open problem. In recent years, advances in the field of deep learning on tasks such as superresolution and image enhancement have led to unprecedented performance in generating high-quality images from low-quality ones, a processwe refer to as <i>neural enhancement</i>. In this paper, we survey state-of-the-art content delivery systems that employ neural enhancement as a key component in achieving both fast response time and high visual quality. We first present the deployment challenges of neural enhancement models. We then cover systems targeting diverse use-cases and analyze their design decisions in overcoming technical challenges. Moreover, we present promising directions based on the latest insights from deep learning research to further boost the quality of experience of these systems.</p>
+								<p>
+									Royson Lee, <strong>Stylianos I. Venieris</strong> and Nicholas D. Lane<br/>
+									<em><a href="papers/[2021]_csur_dnn_based_enhancement_for_img_and_vid_streaming_systems.pdf">Deep Neural Network-based Enhancement for Image and Video Streaming Systems: A Survey and Future Directions</a></em>,
+									<strong>ACM Computing Surveys (CSUR), 2021.</strong> [<a href="papers/dnn_cds2021csur.bibtex" target="_blank">bibtex</a> | <a href="https://arxiv.org/abs/2106.03727">preprint</a>] <!--[<a href="papers/sv2018csur.bibtex" target="_blank">bibtex</a> | <a href="https://dl.acm.org/citation.cfm?id=3186332">link</a>]-->
+					</p>
+							</td>
+						</tr>						
+						<tr>
 							<td class="tg-031e" valign="top"><a href="hapi.png" target="_blank"><img src="hapi.png" alt="Hardware-aware progressive inference with HAPI." width="380px"></a>
 							</td>
 							<td class="tg-031e">
